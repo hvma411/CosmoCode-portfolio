@@ -17,9 +17,17 @@ import {
 
 // import store from './ReduxStore';
 
+import '../scss/main.scss';
+import Header from './Header';
+import AboutMe from './About';
+
 const App = () => {
     return (
-        <div>Hello World!</div>
+        <HashRouter>
+            <Header />
+            <AboutMe />
+        </HashRouter>
+
     )
 }
 
