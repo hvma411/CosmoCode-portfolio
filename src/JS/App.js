@@ -19,7 +19,7 @@ import {
 
 import '../scss/main.scss';
 import Header from './Header';
-import AboutMe from './About';
+import AboutMe from './Main';
 
 const App = () => {
     return (

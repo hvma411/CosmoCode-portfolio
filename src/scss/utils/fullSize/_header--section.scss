@@ -1,0 +1,55 @@
+header {
+    width: 100%;
+    height: auto;
+    background: $header-color;
+    display: flex;
+    align-items: center;
+    flex-direction: column;    
+    position: sticky;
+    top: 0;
+
+    .header__nav {
+        width: 100%;
+        height: auto;
+        background: rgba(42, 27, 61, 0.8);
+        display: flex;
+        justify-content: space-between;
+        letter-spacing: 1px;
+        opacity: 0.8;
+
+
+        &--logo {
+            color: $txt-color;
+            font-size: 20px;
+            font-weight: 600;
+            padding: 15px;
+        }
+
+        &--navigation {
+            padding: 15px;
+
+            ul {
+                display: flex;
+                list-style: none;
+            }
+            
+            a {
+                color: $txt-color;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: 600;
+                margin: 10px;
+                animation-name: navSpacingOut;
+                animation-duration: 0.5s;
+                animation-iteration-count: 1;
+            }
+
+            a:hover {
+                color: $btn-color;
+                animation-name: navSpacingIn;
+                animation-duration: 0.5s;
+                animation-iteration-count: 1;
+            }
+        }
+    }    
+}

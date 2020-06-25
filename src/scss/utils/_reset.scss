@@ -4,10 +4,41 @@
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    font-family: 'Righteous', cursive;
+    font-family: 'Audiowide', cursive;
 }
 
-.container {
-    width: 100%;
-    max-width: 1280px;
+@media (min-width: 1900px) {
+    .container--header__info {
+        width: 100%;
+        max-width: 1470px;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: 1920px;
+    }
+}
+
+@media (max-width: 1899px) {
+    .container--header__info {
+        width: 100%;
+        max-width: 1210px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 1660px;
+    }
+}
+
+@media (max-width: 1659px) {
+    .container--header__info {
+        width: 100%;
+        max-width: 990px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 1440px;
+    }
 }

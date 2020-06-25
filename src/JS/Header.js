@@ -11,21 +11,17 @@ import {
 const Header = () => {
     return (
         <header>
-            <div className="header__nav">
+            <div className="header__nav container">
                 <div className="header__nav--logo">COSMOCODE</div>
                 <nav className="header__nav--navigation">
-                    <Link to="/">MAIN</Link>
-                    <Link to="/aboutme">ABOUT ME</Link>
-                    <Link to="/webdev">WEB DEVELOPMENT</Link>
-                    <Link to="/digitalart">DIGITAL ART</Link>
-                    <Link to="/contact">CONTACT ME</Link>
+                    <ul>
+                        <li><Link to="/">MAIN</Link></li>
+                        <li><Link to="/aboutme">ABOUT ME</Link></li>
+                        <li><Link to="/webdev">WEB DEVELOPMENT</Link></li>
+                        <li><Link to="/digitalart">DIGITAL ART</Link></li>
+                        <li><Link to="/contact">CONTACT ME</Link></li>
+                    </ul>
                 </nav>
-            </div>
-            <div className="header__main container">
-                <div className="header__main--hello">
-                    <h1 className="name">HELLO I'M KAMIL</h1>
-                    <h2 className="job">JUNIOR FRONTEND DEVELOPER</h2>
-                </div>
             </div>
         </header>
     )
