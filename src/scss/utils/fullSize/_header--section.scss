@@ -1,21 +1,22 @@
 header {
     width: 100%;
     height: auto;
-    background: $header-color;
+    background: $main-color;
     display: flex;
     align-items: center;
     flex-direction: column;    
     position: sticky;
     top: 0;
+    text-shadow: -5px 0px 0px black;
 
     .header__nav {
         width: 100%;
         height: auto;
-        background: rgba(42, 27, 61, 0.8);
+        background: $main-color;
         display: flex;
         justify-content: space-between;
         letter-spacing: 1px;
-        opacity: 0.8;
+        
 
 
         &--logo {
