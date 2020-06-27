@@ -5,7 +5,7 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;    
-    position: sticky;
+    position: fixed;
     top: 0;
     text-shadow: -5px 0px 0px black;
 
@@ -40,6 +40,8 @@ header {
                 font-size: 20px;
                 font-weight: 600;
                 margin: 10px;
+                cursor: pointer;
+                user-select: none;
                 animation-name: navSpacingOut;
                 animation-duration: 0.5s;
                 animation-iteration-count: 1;
