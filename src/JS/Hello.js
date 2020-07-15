@@ -14,6 +14,7 @@ import { faJsSquare, faSass, faHtml5, faCss3Alt, faReact, faNpm, faAdobe, faGith
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import FontAwesome from "react-fontawesome";
 
+
 const Hello = () => {
     return (
         <section className="hello__section" id="header">

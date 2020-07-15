@@ -2,6 +2,7 @@ import React, { Component, useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import {
   HashRouter,
+  BrowserRouter,
   Route,
   Link,
   Switch,
@@ -23,10 +24,10 @@ import Main from './Main';
 
 const App = () => {
     return (
-        <HashRouter>
+        <BrowserRouter>
             <Header />
             <Main />
-        </HashRouter>
+        </BrowserRouter>
 
     )
 }
