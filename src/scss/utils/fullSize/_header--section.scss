@@ -1,18 +1,19 @@
 header {
     width: 100%;
     height: auto;
-    background: $main-color;
+    // background: rgba(34, 42, 60, 0);
     display: flex;
     align-items: center;
     flex-direction: column;    
     position: fixed;
     top: 0;
-    text-shadow: -5px 0px 0px black;
+    text-shadow: -4px 0px 0px black;
+    z-index: 999;
 
     .header__nav {
         width: 100%;
         height: auto;
-        background: $main-color;
+        background: transparent;
         display: flex;
         justify-content: space-between;
         letter-spacing: 1px;

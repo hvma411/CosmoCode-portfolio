@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+/functions
+/firebaseConfig
 /.pnp
 .pnp.js
 
@@ -10,6 +12,7 @@
 
 # production
 /build
+/public
 
 # misc
 .DS_Store

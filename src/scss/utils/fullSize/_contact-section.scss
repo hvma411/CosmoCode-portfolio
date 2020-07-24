@@ -1,0 +1,278 @@
+.contact-main-box {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left-box {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+
+    }
+
+    .contact-details {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        h3 {
+            margin-bottom: 20px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h3:nth-of-type(2) {
+            margin-top: 20px;
+        }
+
+        span {
+            color: $txt-color;
+            font-size: 22px;
+            font-weight: 800;
+        }
+
+        h4 {
+            text-align: left;
+            color: $txt-color;
+        }
+
+        .social-box {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            a {
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 10px;
+            }
+            svg {
+                font-size: 30px;
+                color: $txt-color;
+                
+                cursor: pointer;
+            }
+
+            .fa-linkedin {
+                animation-name: icons-animation;
+                animation-duration: 0.3s;
+                animation-iteration-count: 1;
+                animation-delay: 1.5s;
+            }
+        
+            .fa-github-square {
+                animation-name: icons-animation;
+                animation-duration: 0.3s;
+                animation-iteration-count: 1;
+                animation-delay: 1.6s;
+            }
+        
+            .fa-instagram-square {
+                animation-name: icons-animation;
+                animation-duration: 0.3s;
+                animation-iteration-count: 1;
+                animation-delay: 1.7s;
+            }
+        
+            .fa-facebook-square {
+                animation-name: icons-animation;
+                animation-duration: 0.3s;
+                animation-iteration-count: 1;
+                animation-delay: 1.8s;
+            }
+        
+            .fa-youtube-square {
+                animation-name: icons-animation;
+                animation-duration: 0.3s;
+                animation-iteration-count: 1;
+                animation-delay: 1.9s;
+            }
+
+            svg:hover {
+                font-size: 32px;
+            }
+        }
+
+    }
+
+    .form-box {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        .headers-box {
+            height: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+            margin-bottom: 20px;
+
+            h3 {
+                margin: 0;
+            }
+        }
+    } 
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .input-box, .button-box {
+            width: 30.3rem;
+            height: 3.3rem;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .textarea-box {
+            width: 30.3rem;
+            height: 10.3rem;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input, textarea, button {
+            width: 30rem;
+            height: 3rem;
+            border-radius: 3px;
+            border: none;
+            background: $txt-color;
+            padding: 10px;
+            font-size: 1.4rem;
+            color: $btn-color;
+            font-weight: 600;
+            outline: none;
+            -webkit-box-shadow: -4px 0px 5px 1px rgba(0,0,0,0.75);
+            -moz-box-shadow: -4px 0px 5px 1px rgba(0,0,0,0.75);
+            box-shadow: -4px 0px 5px 1px rgba(0,0,0,0.75);
+        }
+
+        input:focus, input:hover  {
+            width: 30.1rem;
+            height: 3.1rem;
+            font-size: 1.42rem;
+        }
+
+        textarea:focus, textarea:hover {
+            width: 30.1rem;
+            height: 10.1rem;
+            font-size: 1.42rem;
+        }
+
+        textarea {
+            resize: none;
+            height: 10rem;
+            
+        }
+
+        button {
+            background-color: $btn-color;
+            color: $txt-color;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        button:active {
+            height: 2.9rem;
+        }
+
+
+    }
+}
+
+.flying-social-box {
+    padding: 10px 20px 10px 20px;
+    position: fixed;
+    bottom: 0px;
+    left: 20px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    background: rgb(34,42,60);
+    background: linear-gradient(180deg, rgba(34,42,60,0.29315476190476186) 0%, rgba(216,63,135,1) 100%);
+    animation-name: flying-box;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+
+    a {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    svg {
+        font-size: 30px;
+        color: $txt-color;
+        cursor: pointer;
+        // animation-name: icons-animation;
+        // animation-duration: 0.5s;
+        // animation-iteration-count: 1;
+        // animation-delay: 1s;
+    }
+
+    .fa-linkedin {
+        animation-name: icons-animation;
+        animation-duration: 0.3s;
+        animation-iteration-count: 1;
+        animation-delay: 1.5s;
+    }
+
+    .fa-github-square {
+        animation-name: icons-animation;
+        animation-duration: 0.3s;
+        animation-iteration-count: 1;
+        animation-delay: 1.6s;
+    }
+
+    .fa-instagram-square {
+        animation-name: icons-animation;
+        animation-duration: 0.3s;
+        animation-iteration-count: 1;
+        animation-delay: 1.7s;
+    }
+
+    .fa-facebook-square {
+        animation-name: icons-animation;
+        animation-duration: 0.3s;
+        animation-iteration-count: 1;
+        animation-delay: 1.8s;
+    }
+
+    .fa-youtube-square {
+        animation-name: icons-animation;
+        animation-duration: 0.3s;
+        animation-iteration-count: 1;
+        animation-delay: 1.9s;
+    }
+
+    svg:hover {
+        font-size: 32px;
+    }
+}

@@ -2,7 +2,7 @@
 
 @keyframes navSpacingIn{
     from {color: $txt-color;}
-    to {color: $btn-color;}
+    to {color: $main-color;}
 }
 
 @keyframes navSpacingOut{
@@ -10,3 +10,43 @@
     to {color: $txt-color;}
 }
 
+
+@keyframes spin-right {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes icons-animation {
+    0% {
+        font-size: 30px;
+    }
+
+    25% {
+        font-size: 31px;
+    }
+
+    50% {
+        font-size: 32px;
+    }
+
+    75% {
+        font-size: 31px;
+    }
+
+    100% {
+        font-size: 30px;
+    }
+}
+
+
+@keyframes flying-box {
+    0% {
+        bottom: -200px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
