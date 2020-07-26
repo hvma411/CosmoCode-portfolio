@@ -6,7 +6,7 @@ import {
   Switch,
   NavLink,
 } from 'react-router-dom';
-import ReactPlayer from 'react-player';
+import ReactPlayer from 'react-player/youtube';
 import videoDraw1 from './videos/video1.mp4';
 
 const DigitalArt = () => {
@@ -16,12 +16,23 @@ const DigitalArt = () => {
     const handleImgClick = (e) => {
         if (e.target.id === "draw1") {
             setImgToShow("draw1");
+            document.querySelector('.close-box').style.display = 'block';
         } else if (e.target.id === "draw2") {
             setImgToShow("draw2");
+            document.querySelector('.close-box').style.display = 'block';
         } else if (e.target.id === "draw3") {
             setImgToShow("draw3");
+            document.querySelector('.close-box').style.display = 'block';
         } else if (e.target.id === "close-box") {
-            setImgToShow(null);
+            document.querySelector('.show-art').classList.add('art-invisible');
+            document.querySelector('#close-box').classList.add('art-invisible');
+            console.log(document.querySelector('.close-box'))
+            const timer = setTimeout(() => {
+                setImgToShow(null);
+                document.querySelector('.close-box').style.display = 'none';
+                document.querySelector('.close-box').classList.remove('art-invisible');
+            }, 900);
+            
         }
     }
 
@@ -37,7 +48,11 @@ const DigitalArt = () => {
                 </div>
             </div>
             <ShowArt imgToShow={ imgToShow }/>
-            <div className="close-box" id="close-box" onClick={ handleImgClick }></div>
+            <div className="close-box" id="close-box" onClick={ handleImgClick }>
+                <span className="line1" id="close-box"></span>
+                <span className="line2" id="close-box"></span>
+                <span className="click-box" id="close-box" onClick={ handleImgClick }></span>
+            </div>
         </section>
     );
 };
