@@ -22,9 +22,25 @@ const Header = () => {
                         <li><Link to="contact" smooth="true" duration={1000}>CONTACT ME</Link></li>
                     </ul>
                 </nav>
+                <HamburgerMenu />
             </div>
         </header>
     )
 }
+
+const HamburgerMenu = () => {
+    const handleHamburgerClick = () => {
+        const hamburger = document.querySelector('.hamburger');
+        hamburger.classList.toggle('hamburger--active')
+    }
+
+    return (
+        <button className="hamburger" onClick={ handleHamburgerClick }>
+            <span className="hamburger__box">
+                <span className="hamburger__inner"></span>
+            </span>
+        </button>
+        )
+    }
 
 export default Header

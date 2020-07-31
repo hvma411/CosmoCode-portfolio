@@ -24,7 +24,6 @@ const Projects = () => {
                     <div className="project-box"></div>
                     <div className="project-box"></div>
                     <div className="project-box"></div>
-                    <div className="project-box"></div>
                 </div>
             </div>
         </section>

@@ -1,0 +1,50 @@
+@media (max-width: 420px) {
+    div .about__section {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+
+        &--position {
+            flex-direction: column-reverse;
+            width: 100%;
+        }
+
+        &--left {
+            display: none;
+        }
+    }
+
+    div .about__section--right {
+        width: 100%;
+        justify-content: space-around;
+        margin-bottom: 20px;
+
+        .first-box, .second-box {
+            padding: 20px;
+        }
+
+        .first-box {
+            height: 40%;
+        }
+
+        .second-box {
+            height: 40%;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        .decoration {
+            width: 70%;
+        }
+
+        p {
+            padding-top: 20px;
+            max-width: 80%;
+            font-size: 16px;
+        }
+    }
+}

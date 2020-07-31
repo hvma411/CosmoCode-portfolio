@@ -30,7 +30,7 @@ const Main = () => {
             <About />
             <Projects />
             <DigitalArt />
-            <Contact />
+            {/* <Contact /> */}
         </>
     )
 }

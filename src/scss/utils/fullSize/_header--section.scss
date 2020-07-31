@@ -1,59 +1,63 @@
-header {
-    width: 100%;
-    height: auto;
-    // background: rgba(34, 42, 60, 0);
-    display: flex;
-    align-items: center;
-    flex-direction: column;    
-    position: fixed;
-    top: 0;
-    text-shadow: 0px 0px 15px black;
-    z-index: 999;
-
-    .header__nav {
+@media (min-width: 1280px) {
+    header {
         width: 100%;
         height: auto;
-        background: transparent;
+        // background: rgba(34, 42, 60, 0);
         display: flex;
-        justify-content: space-between;
-        letter-spacing: 1px;
-        
-
-
-        &--logo {
-            color: $txt-color;
-            font-size: 20px;
-            font-weight: 600;
-            padding: 15px;
-        }
-
-        &--navigation {
-            padding: 15px;
-
-            ul {
-                display: flex;
-                list-style: none;
-            }
+        align-items: center;
+        flex-direction: column;    
+        position: fixed;
+        top: 0;
+        text-shadow: 0px 0px 15px black;
+        z-index: 999;
+    
+        .header__nav {
+            width: 100%;
+            height: auto;
+            background: transparent;
+            display: flex;
+            justify-content: space-between;
+            letter-spacing: 1px;
             
-            a {
+            .hamburger {
+                display: none;
+            }
+    
+            &--logo {
                 color: $txt-color;
-                text-decoration: none;
                 font-size: 20px;
                 font-weight: 600;
-                margin: 10px;
-                cursor: pointer;
-                user-select: none;
-                animation-name: navSpacingOut;
-                animation-duration: 0.5s;
-                animation-iteration-count: 1;
+                padding: 15px;
             }
-
-            a:hover {
-                color: $btn-color;
-                animation-name: navSpacingIn;
-                animation-duration: 0.5s;
-                animation-iteration-count: 1;
+    
+            &--navigation {
+                padding: 15px;
+    
+                ul {
+                    display: flex;
+                    list-style: none;
+                }
+                
+                a {
+                    color: $txt-color;
+                    text-decoration: none;
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin: 10px;
+                    cursor: pointer;
+                    user-select: none;
+                    animation-name: navSpacingOut;
+                    animation-duration: 0.5s;
+                    animation-iteration-count: 1;
+                }
+    
+                a:hover {
+                    color: $btn-color;
+                    animation-name: navSpacingIn;
+                    animation-duration: 0.5s;
+                    animation-iteration-count: 1;
+                }
             }
-        }
-    }    
+        }    
+    }
 }
