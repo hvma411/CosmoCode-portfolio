@@ -1,0 +1,69 @@
+@media (max-width: 420px) {
+    div.contact-main-box {
+        width: 100%;
+        height: 140vh;
+        flex-direction: column-reverse;
+    
+        div.form-box {
+            width: 100%;
+            height: 50%;
+
+            .headers-box {
+                width: 100%;
+                justify-content: center;
+                margin: 0;
+                padding: 20px 0 20px 0;
+
+                h3 {
+                    text-align: center;
+                    font-size: 1.3rem;
+                    height: auto;
+                }
+                
+            }
+
+            form {
+                width: 100%;
+
+                .input-box, .button-box, .textarea-box {
+                    width: 100%;
+
+                    input {
+                        width: 100%;
+                    }
+                    textarea {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .left-box {
+            width: 100%;
+            height: 50%;
+            padding-top: 40px;
+
+            h3 {
+                margin: 0;
+            }
+        }
+    }
+
+    div.flying-social-box {
+        transform: rotate(90deg);
+        left: 60px;
+        animation-name: flying-box-mobile;
+        
+
+        a {
+            transform: rotate(-90deg);
+        }
+    }
+
+    div.flying-social-box--invisible {
+        animation-name: flying-box-mobile-invisible;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        left: -200px;
+    }
+}

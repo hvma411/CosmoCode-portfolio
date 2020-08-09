@@ -1,18 +1,18 @@
 @media (max-width: 420px) {
-    .hello__section {
+    section.hello__section, .mobile {
         width: 100%;
-        height: 100vh;
+        height: 90vh;
         display: flex;
         justify-content: center;
         align-items: flex-start;
         margin-top: 60px;
 
-        &__position {
+        .hello__section__position {
             display: flex;
             justify-content: flex-start;
         }
 
-        &--hello {
+        .hello__section--hello {
             color: $txt-color;
             user-select: none;
             text-shadow: 0px 0px 15px black;
@@ -24,7 +24,7 @@
         }
 
 
-        .main--txt {
+        div.main--txt {
             width: 100%;
             margin-top: 20px;
 
@@ -52,7 +52,7 @@
             }
         }
 
-        .main--img {
+        div.main--img {
             display: block;
             background-image: url(/assets/IMG_0090.PNG);
             background-repeat: no-repeat;

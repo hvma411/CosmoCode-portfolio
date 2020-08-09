@@ -12,12 +12,12 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faJsSquare, faSass, faHtml5, faCss3Alt, faReact, faNpm, faAdobe, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
-import FontAwesome from "react-fontawesome";
 
 
 const Hello = () => {
+
     return (
-        <section className="hello__section" id="header">
+        <section className="hello__section mobile" id="header">
             <div className="hello__section--position container--section">
                 <div className="hello__section--hello">
                     <div className="main--txt">

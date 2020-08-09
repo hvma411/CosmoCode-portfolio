@@ -51,6 +51,26 @@
     }
 }
 
+@keyframes flying-box-mobile {
+    0% {
+        left: -200px;
+    }
+
+    100% {
+        left: 60px;
+    }
+}
+
+@keyframes flying-box-mobile-invisible {
+    0% {
+        left: 60px;
+    }
+
+    100% {
+        left: -200px;
+    }
+}
+
 @keyframes artVisible {
     0% {
         opacity: 0;

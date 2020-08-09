@@ -1,14 +1,6 @@
-import React, { Component, useState, useEffect } from "react";
+import React, {  useState, useEffect } from "react";
 import ReactDOM from "react-dom";
-import {
-  HashRouter,
-  Route,
-  Switch,
-  NavLink,
-} from 'react-router-dom';
 
-
-import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faJsSquare, faSass, faHtml5, faCss3Alt, faReact, faNpm, faGithubSquare, faAdobe, faGithub, faLinkedinIn, faLinkedin, faFacebook, faFacebookSquare, faGitSquare, faInstagramSquare, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons'
 import { faChevronLeft, faChevronRight, faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
@@ -46,6 +38,21 @@ const Contact = () => {
         sendMessage();;
         console.log(contactForm);
     }
+
+    useEffect(() => {
+        const scrollToHide = e => {
+            const flyingBoxToHide = document.querySelector('.flying-social-box').getBoundingClientRect().top;
+            const element = document.querySelector('.about__section').getBoundingClientRect().top;
+
+            if (Math.round(flyingBoxToHide) > Math.round(element) && document.documentElement.clientWidth < 421) {
+                document.querySelector('.flying-social-box').classList.add('flying-social-box--invisible')
+            } else {
+                document.querySelector('.flying-social-box').classList.remove('flying-social-box--invisible')
+            }
+            
+        }
+        window.addEventListener('scroll', scrollToHide);
+    })
 
     return (
         <section className="content__section" id="contact">
