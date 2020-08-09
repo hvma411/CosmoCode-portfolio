@@ -17,12 +17,46 @@ const Contact = () => {
     })
 
     const sendMessage = () => {
-        db.collection('formMessages').add(contactForm).then((docRef) => {
-            console.log("Document written succefully with ID: ", docRef.id);
-        })
-        .catch((error) => {
-            console.error("Error adding document: ", error)
-        });
+
+        const errors = [];
+
+        if (contactForm.fullName === "" || contactForm.fullName.length < 2) {
+            errors.push("wrongName");
+            document.querySelector(".wrongName").style.display = "block";
+        };
+
+        if (validateEmail(contactForm.emailAddress) === false) {
+            errors.push("wrongEmail");
+            document.querySelector(".wrongEmail").style.display = "block";
+        };
+
+        if (contactForm.questMessage.length < 60) {
+            errors.push('wrongMessage');
+            document.querySelector(".wrongMessage").style.display = "block";
+        }
+
+        if (contactForm.fullName === "" && contactForm.emailAddress === "" && contactForm.questMessage === "") {
+            errors.push("emptyForm");
+            document.querySelector(".emptyForm").style.display = "block";
+            document.querySelector(".wrongName").style.display = "none";
+            document.querySelector(".wrongEmail").style.display = "none";
+            document.querySelector(".wrongMessage").style.display = "none";
+        }
+        
+        if (errors.length < 1) {
+            db.collection('formMessages').add(contactForm).then((docRef) => {
+                console.log("Document written succefully with ID: ", docRef.id);
+            })
+            .catch((error) => {
+                console.error("Error adding document: ", error)
+            });
+        }
+
+    }
+
+    const validateEmail = (email) => {
+        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
     }
 
     const handleFormChange = (e) => {
@@ -53,6 +87,25 @@ const Contact = () => {
         }
         window.addEventListener('scroll', scrollToHide);
     })
+
+    useEffect(() => {
+        if (contactForm.fullName.length > 0) {
+            document.querySelector(".wrongName").style.display = "none";
+        };
+
+        if (validateEmail(contactForm.emailAddress) === true) {
+            document.querySelector(".wrongEmail").style.display = "none";
+        };
+
+        if (contactForm.questMessage.length > 59) {
+            document.querySelector(".wrongMessage").style.display = "none";
+        }
+
+        if (contactForm.fullName.length > 0 || contactForm.emailAddress.length > 0 || contactForm.questMessage.length > 0) {
+            document.querySelector(".emptyForm").style.display = "none";
+        }
+
+    }, [contactForm])
 
     return (
         <section className="content__section" id="contact">
@@ -99,6 +152,12 @@ const Contact = () => {
                             <div className="input-box"><input type="text" name="emailAddress" value={ contactForm.emailAddress } onChange={ handleFormChange } placeholder="Your email address" /></div>
                             <div className="textarea-box"><textarea name='questMessage' value={ contactForm.questMessage } onChange={ handleFormChange } placeholder="Your message..." /></div>
                             <div className="button-box"><button onClick={ handleButtonClick } ><FontAwesomeIcon icon={faArrowAltCircleRight} /> Send message</button></div>
+                            <div className="errors-box">
+                                <span className="wrongName">I'd like to know your name, type it please :)</span>
+                                <span className="wrongEmail">Your email address have to be correct. Otherwise I won't be able to write back to you.</span>
+                                <span className="wrongMessage">I think your message is too short. Write some more words please. (min. 120 characters)</span>
+                                <span className="emptyForm">Type your name, email address and message (min. 120 characters), please.</span>
+                            </div>
                         </form>
                     </div>
                 </div>
