@@ -21,9 +21,9 @@ const Hello = () => {
             <div className="hello__section--position container--section">
                 <div className="hello__section--hello">
                     <div className="main--txt">
-                        <h1 className="name">HELLO I'M KAMIL</h1>
-                        <h2 className="role">FRONT-END DEVELOPER</h2>
-                        <div className="tech">
+                        <h1 className="name">Your bussiness at a higher level</h1>
+                        <h2 className="role">websites, web apps, branding</h2>
+                        {/* <div className="tech">
                             <div className="archLeft">
                                 <FontAwesomeIcon icon={faChevronLeft} className="arch"/>
                             </div>
@@ -62,15 +62,10 @@ const Hello = () => {
                             <div className="archRight">
                                 <FontAwesomeIcon icon={faChevronRight} className="arch"/>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
-                    {/* <div className="orbit-box">
-                        <div className="orbit">
-                                <div className="planet"></div>
-                        </div>
+                    {/* <div className="main--img">
                     </div> */}
-                    <div className="main--img">
-                    </div>
                 </div>
             </div>
         </section>
