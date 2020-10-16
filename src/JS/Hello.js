@@ -18,6 +18,7 @@ const Hello = () => {
 
     return (
         <section className="hello__section mobile" id="header">
+            <div className="background__image"></div>
             <div className="hello__section--position container--section">
                 <div className="hello__section--hello">
                     <div className="main--txt">
@@ -64,8 +65,6 @@ const Hello = () => {
                             </div>
                         </div> */}
                     </div>
-                    {/* <div className="main--img">
-                    </div> */}
                 </div>
             </div>
         </section>

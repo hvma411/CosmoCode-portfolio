@@ -29,8 +29,8 @@ const Main = () => {
         <>
             <Hello />
             <Services />
-            <About />
             <Projects />
+            <About />
             {/* <DigitalArt /> */}
             <Contact />
         </>
