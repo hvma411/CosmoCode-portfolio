@@ -12,12 +12,11 @@ const Services = () => {
     
 
     return (
-        <section className="content__section services" id="services">
-            <div className="content__section--position container--section">
+        <section className="services__section" id="services">
+            <div className="services__section--position container--section">
                 <div className="title-box">
                     <span></span>
                     <h3>My Services</h3>
-                    
                 </div>
                 <div className="services-box">
                     <div className="service">
@@ -35,6 +34,9 @@ const Services = () => {
                         <h4>Full bussines branding</h4>
                         <p>Old looking bussines branding? Or maybe you don't heave it yet? Let me help you to create fresh and remaining in memory design for your bussines.</p>
                     </div>
+                </div>
+                <div className="read__more--box">
+                    <button className="read__more--btn">Read more</button>
                 </div>
             </div>
         </section>
