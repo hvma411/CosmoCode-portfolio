@@ -167,7 +167,7 @@
     .main--img {
         width: 50%;
         height: 30rem;
-        background-image: url(/src/scss/IMG_0090.PNG);
+        background-image: url(/assets/IMG_0090.PNG);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: bottom right;
@@ -224,8 +224,8 @@
 
         .decoration {
             width: 350px;
-            border-top: 2px solid $txt-color;
-            border-bottom: 2px solid $txt-color;
+            border-top: 2px solid $btn-color;
+            border-bottom: 2px solid $btn-color;
             border-radius: 3px;
         }
 
@@ -252,8 +252,8 @@
 
     .decoration {
         width: 350px;
-        border-top: 2px solid $txt-color;
-        border-bottom: 2px solid $txt-color;
+        border-top: 2px solid $btn-color;
+        border-bottom: 2px solid $btn-color;
         border-radius: 3px;
     }
 
@@ -287,6 +287,9 @@
             margin: 10px;
             border-radius: 3px;
             background: $txt-color;
+            -webkit-box-shadow: -4px 0px 5px 1px rgba(0,0,0,0.75);
+            -moz-box-shadow: -4px 0px 5px 1px rgba(0,0,0,0.75);
+            box-shadow: -4px 0px 5px 1px rgba(0,0,0,0.75);
         }
     }
 }
