@@ -10,6 +10,11 @@
 body {
     background: $main-color;
     background-attachment: fixed;
+    overflow-x: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 
