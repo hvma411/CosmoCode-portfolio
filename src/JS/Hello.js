@@ -12,18 +12,19 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faJsSquare, faSass, faHtml5, faCss3Alt, faReact, faNpm, faAdobe, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
-import FontAwesome from "react-fontawesome";
 
 
 const Hello = () => {
+
     return (
-        <section className="hello__section" id="header">
+        <section className="hello__section mobile" id="header">
+            <div className="background__image"></div>
             <div className="hello__section--position container--section">
                 <div className="hello__section--hello">
                     <div className="main--txt">
-                        <h1 className="name">HELLO I'M KAMIL</h1>
-                        <h2 className="role">FRONT-END DEVELOPER</h2>
-                        <div className="tech">
+                        <h1 className="name">Your bussiness at a higher level</h1>
+                        <h2 className="role">websites, web apps, branding</h2>
+                        {/* <div className="tech">
                             <div className="archLeft">
                                 <FontAwesomeIcon icon={faChevronLeft} className="arch"/>
                             </div>
@@ -62,14 +63,7 @@ const Hello = () => {
                             <div className="archRight">
                                 <FontAwesomeIcon icon={faChevronRight} className="arch"/>
                             </div>
-                        </div>
-                    </div>
-                    {/* <div className="orbit-box">
-                        <div className="orbit">
-                                <div className="planet"></div>
-                        </div>
-                    </div> */}
-                    <div className="main--img">
+                        </div> */}
                     </div>
                 </div>
             </div>
