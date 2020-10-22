@@ -9,6 +9,19 @@ import {
 import { Link } from 'react-scroll'
 
 const Header = () => {
+
+    let prevScrollpos = window.pageYOffset;
+
+    window.onscroll = () => {
+        let currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.querySelector('header').style.top = "0";
+        } else {
+            document.querySelector('header').style.top = "-50px"
+        }
+        prevScrollpos = currentScrollPos
+    }
+
     return (
         <header>
             <div className="header__nav container" >

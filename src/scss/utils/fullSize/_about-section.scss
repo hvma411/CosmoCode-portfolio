@@ -82,7 +82,25 @@
         }
 
         .section__sides--right {
-            width: 60%;
+            width: 65%;
+
+            .txt--reducer {
+                padding-left: 150px;
+
+                h4 {
+                    font-size: 22px;
+                    color: $main-color2;
+                    margin: 20px 0 20px 0;
+                }
+
+                .about--txt {
+                    font-size: 16px;
+                    font-weight: 100;
+                    color: $main-color;
+                    max-width: 800px;
+                    margin: 10px 0 30px 0;
+                }
+            }
         }
     }
 

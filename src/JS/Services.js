@@ -27,12 +27,12 @@ const Services = () => {
                     <div className="service">
                         <div className="icon2"></div>
                         <h4>Easy to manage websites</h4>
-                        <p>Your bussines website or idea for a blog? Share it with me and I will develop it for you. You will receive a finished product with easy CMS for website management.</p>
+                        <p>Your business website or idea for a blog? Share it with me and I will develop it for you. You will receive a finished product with easy CMS for website management.</p>
                     </div>
                     <div className="service">
                         <div className="icon3"></div>
-                        <h4>Full bussines branding</h4>
-                        <p>Old looking bussines branding? Or maybe you don't heave it yet? Let me help you to create fresh and remaining in memory design for your bussines.</p>
+                        <h4>Full business branding</h4>
+                        <p>Old looking business branding? Or maybe you don't heave it yet? Let me help you to create fresh and remaining in memory design for your business.</p>
                     </div>
                 </div>
                 <div className="read__more--box">

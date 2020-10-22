@@ -127,8 +127,8 @@ const Contact = () => {
 
     return (
         <>
-            <section className="content__section" id="contact">
-                <div className="content__section--position container--section">
+            <section className="contact__section" id="contact">
+                <div className="contact__section--position container--section">
                     <h3>CONTACT ME</h3>
                     <span className="decoration"></span>
                     <div className="contact-main-box">
