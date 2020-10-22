@@ -15,6 +15,7 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import FontAwesome from "react-fontawesome";
 
 import Hello from './Hello';
+import Services from './Services';
 import About from './About';
 import Projects from './Projects';
 import DigitalArt from './DigitalArt';
@@ -27,9 +28,10 @@ const Main = () => {
     return (
         <>
             <Hello />
-            <About />
+            <Services />
             <Projects />
-            <DigitalArt />
+            <About />
+            {/* <DigitalArt /> */}
             <Contact />
         </>
     )

@@ -7,11 +7,16 @@ import {
   NavLink,
 } from 'react-router-dom';
 import ReactPlayer from 'react-player/youtube';
-import videoDraw1 from './videos/video1.mp4';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 const DigitalArt = () => {
 
     const [imgToShow, setImgToShow] = useState(null);
+
+    useEffect(() => {
+        Aos.init({duration: 1500});
+    }, [])
 
     const handleImgClick = (e) => {
         if (e.target.id === "draw1") {
@@ -42,9 +47,9 @@ const DigitalArt = () => {
                 <h3>DIGITAL ART</h3>
                 <span className="decoration"></span>
                 <div className="projects-main-box">
-                    <div className="project-box draw1" onClick={ handleImgClick } id="draw1"></div>
-                    <div className="project-box draw2" onClick={ handleImgClick } id="draw2"></div>
-                    <div className="project-box draw3" onClick={ handleImgClick } id="draw3"></div>
+                    <div data-aos="fade-up" className="project-box draw1" onClick={ handleImgClick } id="draw1"></div>
+                    <div data-aos="fade-up" className="project-box draw2" onClick={ handleImgClick } id="draw2"></div>
+                    <div data-aos="fade-up" className="project-box draw3" onClick={ handleImgClick } id="draw3"></div>
                 </div>
             </div>
             <ShowArt imgToShow={ imgToShow }/>
