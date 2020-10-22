@@ -25,7 +25,7 @@ const Services = () => {
                         <p>I create web apps and websites with responsive consistend design that allows you to acces it on devices of various sizes.</p>
                     </div>
                     <div className="service">
-                        <div className="icon2"></div>
+                        <div className="icon2"></div> 
                         <h4>Easy to manage websites</h4>
                         <p>Your business website or idea for a blog? Share it with me and I will develop it for you. You will receive a finished product with easy CMS for website management.</p>
                     </div>
