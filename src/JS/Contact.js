@@ -128,60 +128,56 @@ const Contact = () => {
     return (
         <>
             <section className="contact__section" id="contact">
-                <div className="contact__section--position container--section">
-                    <h3>CONTACT ME</h3>
-                    <span className="decoration"></span>
-                    <div className="contact-main-box">
-                        <div className="left-box">
-                            <div className="contact-details">
-                                <h3>Contact informations:</h3>
-                                <span>Call me:</span>
-                                <h4>+48 882 502 424</h4>
-                                <span>Email:</span>
-                                <h4>kamil@cosmocode.pl</h4>
-                                <span>Address:</span>
-                                <h4>Krakow, Poland</h4>
-                                <h3>Follow me:</h3>
-                                <div className="social-box">
-                                    <a href="https://www.linkedin.com/in/kamil-nosek" target="_blank">
-                                        <FontAwesomeIcon icon={faLinkedin} />                               
-                                    </a>
-                                    <a href="https://github.com/hvma411" target="_blank">
-                                        <FontAwesomeIcon icon={faGithubSquare} />
-                                    </a>
-                                    <a href="https://www.instagram.com/hvma411/" target="_blank">
-                                        <FontAwesomeIcon icon={faInstagramSquare} />
-                                    </a>
-                                    <a href="https://www.facebook.com/hvma411/" target="_blank">
-                                        <FontAwesomeIcon icon={faFacebookSquare} />
-                                    </a>
-                                    <a href="https://www.youtube.com/channel/UC4xlC6jh8UCGD3eGtOuhLZg?view_as=subscriber" target="_blank">
-                                        <FontAwesomeIcon icon={faYoutubeSquare} />
-                                    </a>
+                        <div className="top--box">
+                            <div className="left-box">
+                                <div className="contact-details">
+                                    <h3>Contact informations:</h3>
+                                    <span>Call me:</span>
+                                    <h4>+48 882 502 424</h4>
+                                    <span>Email:</span>
+                                    <h4>kamil@cosmocode.pl</h4>
+                                    <span>Address:</span>
+                                    <h4>Krakow, Poland</h4>
+                                    <h3>Follow me:</h3>
+                                    <div className="social-box">
+                                        <a href="https://www.linkedin.com/in/kamil-nosek" target="_blank">
+                                            <FontAwesomeIcon icon={faLinkedin} />                               
+                                        </a>
+                                        <a href="https://github.com/hvma411" target="_blank">
+                                            <FontAwesomeIcon icon={faGithubSquare} />
+                                        </a>
+                                        <a href="https://www.instagram.com/hvma411/" target="_blank">
+                                            <FontAwesomeIcon icon={faInstagramSquare} />
+                                        </a>
+                                        <a href="https://www.facebook.com/hvma411/" target="_blank">
+                                            <FontAwesomeIcon icon={faFacebookSquare} />
+                                        </a>
+                                        <a href="https://www.youtube.com/channel/UC4xlC6jh8UCGD3eGtOuhLZg?view_as=subscriber" target="_blank">
+                                            <FontAwesomeIcon icon={faYoutubeSquare} />
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="form-box">
-                            <div className="headers-box">
-                                <h3>Any questions or proposals?</h3>
-                                <h3>Feel free to send me a message.</h3>
-                            </div>
-                            <form>
-                                <div className="input-box"><input type="text" name="fullName" value={ contactForm.fullName } onChange={ handleFormChange } placeholder="Your full name" /></div>
-                                <div className="input-box"><input type="text" name="emailAddress" value={ contactForm.emailAddress } onChange={ handleFormChange } placeholder="Your email address" /></div>
-                                <div className="textarea-box"><textarea name='questMessage' value={ contactForm.questMessage } onChange={ handleFormChange } placeholder="Your message..." /></div>
-                                <div className="button-box"><button onClick={ handleButtonClick } ><FontAwesomeIcon icon={faArrowAltCircleRight} /> Send message</button></div>
-                                <div className="errors-box">
-                                    <span className="wrongName">I'd like to know your name, type it please :)</span>
-                                    <span className="wrongEmail">Your email address have to be correct. Otherwise I won't be able to write back to you.</span>
-                                    <span className="wrongMessage">I think your message is too short. Write some more words please. (min. 120 characters)</span>
-                                    <span className="emptyForm">Type your name, email address and message (min. 60 characters), please.</span>
-                                    <span className="messageInfo">Your message has been sent.</span>
+                            <div className="form-box">
+                                <div className="headers-box">
+                                    <h3>Let's create something together. Text me.</h3>
                                 </div>
-                            </form>
+                                <form>
+                                    <div className="input-box"><input type="text" name="fullName" value={ contactForm.fullName } onChange={ handleFormChange } placeholder="Your full name" /></div>
+                                    <div className="input-box"><input type="text" name="emailAddress" value={ contactForm.emailAddress } onChange={ handleFormChange } placeholder="Your email address" /></div>
+                                    <div className="textarea-box"><textarea name='questMessage' value={ contactForm.questMessage } onChange={ handleFormChange } placeholder="Your message..." /></div>
+                                    <div className="button-box"><button onClick={ handleButtonClick } ><FontAwesomeIcon icon={faArrowAltCircleRight} /> Send message</button></div>
+                                    <div className="errors-box">
+                                        <span className="wrongName">I'd like to know your name, type it please :)</span>
+                                        <span className="wrongEmail">Your email address have to be correct. Otherwise I won't be able to write back to you.</span>
+                                        <span className="wrongMessage">I think your message is too short. Write some more words please. (min. 60 characters)</span>
+                                        <span className="emptyForm">Type your name, email address and message (min. 60 characters), please.</span>
+                                        <span className="messageInfo">Your message has been sent.</span>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                        <div className="footer"></div>
                 <div className="flying-social-box">
                     <a href="https://www.linkedin.com/in/kamil-nosek" target="_blank">
                         <FontAwesomeIcon icon={faLinkedin} className="abc" />                               
@@ -199,9 +195,9 @@ const Contact = () => {
                         <FontAwesomeIcon icon={faYoutubeSquare} />
                     </a>
                 </div>
-                <div className="footer-info">
+                {/* <div className="footer-info">
                     {new Date().getFullYear()} &copy; All rights reserved 
-                </div>
+                </div> */}
             </section>
         </>
     );
