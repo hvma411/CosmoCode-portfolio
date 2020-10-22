@@ -19,13 +19,13 @@ import {
 
 import '../scss/main.scss';
 import Header from './Header';
-import AboutMe from './Main';
+import Main from './Main';
 
 const App = () => {
     return (
         <HashRouter>
             <Header />
-            <AboutMe />
+            <Main />
         </HashRouter>
 
     )

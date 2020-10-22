@@ -10,3 +10,9 @@
     to {color: $txt-color;}
 }
 
+
+@keyframes spin-right {
+    100% {
+        transform: rotate(360deg);
+    }
+}
