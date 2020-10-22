@@ -1,0 +1,118 @@
+@media (max-width: 1400px) {
+    div.contact-main-box {
+        width: 100%;
+        height: auto;
+        flex-direction: column-reverse;
+    
+        div.form-box {
+            width: 100%;
+            height: auto;
+
+            .headers-box {
+                width: 100%;
+                justify-content: center;
+                margin: 0;
+                margin: 10px 0 10px 0;
+
+                h3 {
+                    text-align: center;
+                    font-size: 1.3rem;
+                    height: auto;
+                }
+                
+            }
+
+            form {
+                width: 100%;
+
+                .input-box, .button-box, .textarea-box, .errors-box {
+                    width: 100%;
+
+                    input, textarea, span{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .left-box {
+            width: 100%;
+            height: auto;
+
+            .social-box {
+                padding-bottom: 40px;
+            }
+        }
+    }
+
+    div.flying-social-box {
+        transform: rotate(90deg);
+        left: 60px;
+        animation-name: flying-box-mobile;
+        flex-direction: column-reverse;
+        
+
+        a {
+            transform: rotate(-90deg);
+        }
+    }
+
+    div.flying-social-box--invisible {
+        animation-name: flying-box-mobile-invisible;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        left: -200px;
+    }
+}
+
+@media (min-width: 700px) and (orientation: landscape) {
+    div.contact-main-box {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        align-items: flex-start;
+    
+        div.form-box {
+            width: 50%;
+            height: auto;
+
+            .headers-box {
+                width: 100%;
+                justify-content: center;
+                margin: 0;
+                margin: 10px 0 10px 0;
+
+                h3 {
+                    text-align: center;
+                    font-size: 1.3rem;
+                    height: auto;
+                }
+                
+            }
+
+            form {
+                width: 100%;
+
+                .input-box, .button-box, .textarea-box, .errors-box {
+                    width: 100%;
+
+                    input, textarea, span{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .left-box {
+            width: 50%;
+            height: auto;
+
+            .contact-details {
+                margin-top: 18px;
+            }
+            .social-box {
+                padding-bottom: 40px;
+            }
+        }
+    }
+}
