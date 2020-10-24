@@ -37,14 +37,15 @@
 
     .services-box {
         width: 100%;
-        height: 70%;
+        height: 60%;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        margin-bottom: 50px;
     }
 
     .service {
-        width: 33%;
+        width: 30%;
         height: 100%;
         border-radius: 3px;
         background-color: $main-color4;
@@ -53,12 +54,14 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-
+        -webkit-box-shadow: 0px 5px 20px -5px rgba(61,77,112,0.88);
+        -moz-box-shadow: 0px 5px 20px -5px rgba(61,77,112,0.88);
+        box-shadow: 0px 5px 20px -5px rgba(61,77,112,0.88);
 
         .icon1 {
             width: 100%;
             height: 300px;
-            background-position: center;
+            background-position: 8px;
             background-size: cover;
             background-image: url(/src/scss/utils/assets/tablet.PNG);
             margin: 20px 0 20px 0;
@@ -72,7 +75,7 @@
         .icon2 {
             width: 100%;
             height: 300px;
-            background-position: center;
+            background-position: 8px;
             background-size: cover;
             background-image: url(/src/scss/utils/assets/desktop.PNG);
             margin: 20px 0 20px 0;
@@ -86,7 +89,7 @@
         .icon3 {
             width: 100%;
             height: 300px;
-            background-position: center;
+            background-position: 8px;
             background-size: cover;
             background-image: url(/src/scss/utils/assets/bussinessCard.png);
             margin: 20px 0 20px 0;
@@ -110,6 +113,13 @@
         }
     }
 
+    .service:hover {
+        -webkit-box-shadow: 0px 5px 30px -5px rgba(61,77,112,0.88);
+        -moz-box-shadow: 0px 5px 30px -5px rgba(61,77,112,0.88);
+        box-shadow: 0px 5px 30px -5px rgba(61,77,112,0.88);
+        transform: translateY(-5px)
+    }
+
     .read__more--box {
         display: flex;
         justify-content: center;
@@ -118,9 +128,6 @@
         height: 70px;
 
         .read__more--btn {
-            animation-name: btnAnimationOut;
-            animation-duration: 0.5s;
-            margin-bottom: 0;
             padding: 10px 20px 10px 20px;
             border: none;
             background: $main-color2;
@@ -133,12 +140,11 @@
         }
 
         .read__more--btn:hover {
-            animation-name: btnAnimationIn;
-            animation-duration: 0.5s;
+
             -webkit-box-shadow: 0px 10px 20px -5px rgba(61,77,112,0.88);
             -moz-box-shadow: 0px 10px 20px -5px rgba(61,77,112,0.88);
             box-shadow: 0px 10px 20px -5px rgba(61,77,112,0.88);
-            margin-bottom: 2px;
+            transform: translateY(-2px);
         }
     }
 }

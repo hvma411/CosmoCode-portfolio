@@ -25,7 +25,7 @@ const Projects = () => {
     
     return (
         <section className="portfolio__section" id="webdev">
-            <div className="portfolio__nav">
+            <div className="portfolio__nav" data-aos="fade-right">
                 <div className="reducer"></div>
                 <nav className="portfolio">
                     <h4>Portfolio</h4>
@@ -50,17 +50,7 @@ const Projects = () => {
                     </ul>
                 </nav>
             </div>
-            <div className="portfolio--box"></div>
-            {/* <div className="content__section--position container--section">
-
-                <h3>WEB DEVELOPMENT</h3>
-                <span className="decoration"></span>
-                <div className="projects-main-box">
-                    <div data-aos="fade-up" className="project-box"></div>
-                    <div data-aos="fade-up" className="project-box"></div>
-                    <div data-aos="fade-up" className="project-box"></div>
-                </div>
-            </div> */}
+            <div className="portfolio--box" data-aos="fade-up"></div>
         </section>
     )
 }

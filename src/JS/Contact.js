@@ -130,6 +130,7 @@ const Contact = () => {
             <section className="contact__section" id="contact">
                         <div className="top--box">
                             <div className="left-box">
+                                <div className="map--box"></div>
                                 <div className="contact-details">
                                     <h3>Contact informations:</h3>
                                     <span>Call me:</span>
@@ -157,6 +158,7 @@ const Contact = () => {
                                         </a>
                                     </div>
                                 </div>
+                                
                             </div>
                             <div className="form-box">
                                 <div className="headers-box">
@@ -195,9 +197,6 @@ const Contact = () => {
                         <FontAwesomeIcon icon={faYoutubeSquare} />
                     </a>
                 </div>
-                {/* <div className="footer-info">
-                    {new Date().getFullYear()} &copy; All rights reserved 
-                </div> */}
             </section>
         </>
     );
