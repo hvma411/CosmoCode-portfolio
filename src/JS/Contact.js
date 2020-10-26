@@ -6,10 +6,16 @@ import { faFontAwesome, faJsSquare, faSass, faHtml5, faCss3Alt, faReact, faNpm, 
 import { faChevronLeft, faChevronRight, faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
 import FontAwesome from "react-fontawesome";
 import { Link } from 'react-scroll'
+import Aos from 'aos'
+import Footer from './Footer';
 
 import { db } from '../../firebaseConfig/fire';
 
 const Contact = () => {
+
+    useEffect(() => {
+        Aos.init({duration: 1500});
+    }, [])
 
     const [contactForm, setContactForm] = useState({
         fullName: "",
@@ -130,38 +136,42 @@ const Contact = () => {
         <>
             <section className="contact__section" id="contact">
                         <div className="top--box">
-                            <div className="left-box">
+                            <div className="left-box" data-aos="fade-right">
                                 <div className="map--box"></div>
                                 <div className="contact-details">
-                                    <h3>Contact informations:</h3>
-                                    <span>Call me:</span>
-                                    <h4>+48 882 502 424</h4>
-                                    <span>Email:</span>
-                                    <h4>kamil@cosmocode.pl</h4>
-                                    <span>Address:</span>
-                                    <h4>Krakow, Poland</h4>
-                                    <h3>Follow me:</h3>
-                                    <div className="social-box">
-                                        <a href="https://www.linkedin.com/in/kamil-nosek" target="_blank">
-                                            <FontAwesomeIcon icon={faLinkedin} />                               
-                                        </a>
-                                        <a href="https://github.com/hvma411" target="_blank">
-                                            <FontAwesomeIcon icon={faGithubSquare} />
-                                        </a>
-                                        <a href="https://www.instagram.com/hvma411/" target="_blank">
-                                            <FontAwesomeIcon icon={faInstagramSquare} />
-                                        </a>
-                                        <a href="https://www.facebook.com/hvma411/" target="_blank">
-                                            <FontAwesomeIcon icon={faFacebookSquare} />
-                                        </a>
-                                        <a href="https://www.youtube.com/channel/UC4xlC6jh8UCGD3eGtOuhLZg?view_as=subscriber" target="_blank">
-                                            <FontAwesomeIcon icon={faYoutubeSquare} />
-                                        </a>
+                                    <div className="wrapper">
+                                        <h3>Contact informations:</h3>
+                                        <span>Call me:</span>
+                                        <h4>+48 882 502 424</h4>
+                                        <span>Email:</span>
+                                        <h4>kamil@cosmocode.pl</h4>
+                                        <span>Address:</span>
+                                        <h4>Krakow, Poland</h4>
+                                    </div>
+                                    <div className="wrapper">
+                                        <h3>Follow me:</h3>
+                                        <div className="social-box">
+                                            <a href="https://www.linkedin.com/in/kamil-nosek" target="_blank">
+                                                <FontAwesomeIcon icon={faLinkedin} />                               
+                                            </a>
+                                            <a href="https://github.com/hvma411" target="_blank">
+                                                <FontAwesomeIcon icon={faGithubSquare} />
+                                            </a>
+                                            <a href="https://www.instagram.com/hvma411/" target="_blank">
+                                                <FontAwesomeIcon icon={faInstagramSquare} />
+                                            </a>
+                                            <a href="https://www.facebook.com/hvma411/" target="_blank">
+                                                <FontAwesomeIcon icon={faFacebookSquare} />
+                                            </a>
+                                            <a href="https://www.youtube.com/channel/UC4xlC6jh8UCGD3eGtOuhLZg?view_as=subscriber" target="_blank">
+                                                <FontAwesomeIcon icon={faYoutubeSquare} />
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                                 
                             </div>
-                            <div className="form-box">
+                            <div className="form-box" data-aos="fade-up">
                                 <div className="headers-box">
                                     <h3>Let's create something together. Text me.</h3>
                                 </div>
@@ -180,51 +190,7 @@ const Contact = () => {
                                 </form>
                             </div>
                         </div>
-                        <div className="footer">
-                            <div className="footer__top--box">
-                                <nav>
-                                    <h4>Menu</h4>
-                                    <ul>
-                                        <li><Link to="header" smooth="true" duration={1000}>Main</Link></li>
-                                        <li><Link to="services" smooth="true" duration={1000}>Services</Link></li>
-                                        <li><Link to="webdev" smooth="true" duration={1000}>Portfolio</Link></li>
-                                        <li><Link to="about" smooth="true" duration={1000}>About</Link></li>
-                                        <li><Link to="contact" smooth="true" duration={1000}>Contact</Link></li>
-                                    </ul>
-                                </nav>
-                                <div className="social">
-                                    <h4>Social media</h4>
-                                    <ul>
-                                        <li>
-                                            <FontAwesomeIcon icon={faLinkedin} />
-                                            <a href="https://www.linkedin.com/in/kamil-nosek" target="_blank"> Linkedin</a></li>
-                                        <li>
-                                            <FontAwesomeIcon icon={faGithubSquare}/>
-                                            <a href="https://github.com/hvma411" target="_blank"> GitHub</a>
-                                        </li>
-                                        <li>
-                                            <FontAwesomeIcon icon={faInstagramSquare} />
-                                            <a href="https://www.instagram.com/hvma411/" target="_blank"> Instagram</a>  
-                                        </li>
-                                        <li>
-                                            <FontAwesomeIcon icon={faYoutubeSquare} />
-                                            <a href="https://www.youtube.com/channel/UC4xlC6jh8UCGD3eGtOuhLZg?view_as=subscriber" target="_blank"> YouTube</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className="materials">
-                                    <h4>Icons</h4>
-                                    <ul>
-                                        <li>
-                                            <FontAwesomeIcon icon={faFontAwesome} />
-                                            <a href="http://www.fontawesome.com" target="_blank"> FontAwesome</a>
-                                        </li>
-                                        <li>Icons8</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="footer__bottom--box">{new Date().getFullYear()}  &#169;. All rights reserved - CosmoCode.pl Kamil Nosek</div>
-                        </div>
+                        <Footer />
                 <div className="flying-social-box">
                     <a href="https://www.linkedin.com/in/kamil-nosek" target="_blank">
                         <FontAwesomeIcon icon={faLinkedin} />                               

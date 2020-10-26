@@ -12,12 +12,21 @@ import {
 import '../scss/main.scss';
 import Header from './Header';
 import Main from './Main';
+import Footer from './Footer';
+import Privacy from './Privacy';
 
 const App = () => {
     return (
         <BrowserRouter>
-            <Header />
-            <Main />
+            <Route exact path="/">
+                <Header />
+                <Main />
+            </Route>
+            <Route path="/privacy">
+                <Header />
+                <Privacy />
+                <Footer />
+            </Route>
         </BrowserRouter>
 
     )
