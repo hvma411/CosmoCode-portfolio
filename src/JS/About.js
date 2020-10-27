@@ -22,7 +22,7 @@ const About = () => {
     }, [])
 
     return (
-        <section className="about__section" id="about">
+        <section className="about__section mobile" id="about">
             <div className="top--box">
                 <div className="title--box">
                     <span></span>

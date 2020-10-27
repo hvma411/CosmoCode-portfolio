@@ -1,84 +1,48 @@
-@media (max-width: 1400px) {
-    div .about__section {
-        width: 100%;
+@media screen and (max-width: 680px) {
+    .about__section.mobile {
         height: auto;
-        display: flex;
-        justify-content: center;
-        max-width: 100%;
 
-        &--position {
-            flex-direction: column-reverse;
-            width: 100%;
+        .about__section--position {
+            flex-direction: column;
+            align-items: center;
+
+            .section__sides--left {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .name {
+                    width: 90%;
+                    border-radius: 10px;
+                    text-align: center;
+                }
+
+                .photo--box {
+                    width: 90%;
+                    border-radius: 10px;
+                    position: static;
+                    display: flex;
+                    justify-content: center;
+
+                    .photo {
+                        position: static;
+                        transform: translateY(35px);;
+                    }
+                }
+            }
+
+            .section__sides--right {
+                width: 80%;
+                padding-top: 50px;
+
+                .txt--reducer {
+                    padding: 0;
+                }
+            }
         }
-
-        &--left {
-            display: none;
-        }
-    }
-
-    div .about__section--right {
-        width: 100%;
-        justify-content: space-around;
-        margin-bottom: 20px;
-
-        .first-box, .second-box {
-            padding: 20px;
-        }
-
-        .first-box {
-            height: 40%;
-        }
-
-        .second-box {
-            height: 40%;
-        }
-
-        h3 {
-            font-size: 1.5rem;
-        }
-
-        .decoration {
-            width: 70%;
-        }
-
-        p {
-            padding-top: 20px;
-            max-width: 80%;
-            font-size: 16px;
-        }
-    }
-}
-
-@media (min-width: 500px) and (max-width: 1399px) {
-    div .about__section--right {
-        width: 100%;
-        justify-content: space-around;
-        margin-bottom: 20px;
-
-        .first-box, .second-box {
-            padding: 20px;
-        }
-
-        .first-box {
-            height: 40%;
-        }
-
-        .second-box {
-            height: 40%;
-        }
-
-        h3 {
-            font-size: 1.5rem;
-        }
-
-        .decoration {
-            width: 70%;
-        }
-
-        p {
-            padding-top: 20px;
-            max-width: 80%;
-            font-size: 1.2rem;
+        .stack {
+            margin-bottom: 50px;
         }
     }
 }

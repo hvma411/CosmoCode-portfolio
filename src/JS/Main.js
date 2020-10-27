@@ -31,8 +31,7 @@ const Main = () => {
             <Services />
             <Projects />
             <About />
-            {/* <DigitalArt /> */}
-            <Contact />
+            {/* <Contact /> */}
         </>
     )
 }

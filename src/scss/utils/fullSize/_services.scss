@@ -41,11 +41,12 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        flex-wrap: wrap;
         margin-bottom: 50px;
     }
 
     .service {
-        width: 30%;
+        min-width: 30%;
         height: 100%;
         border-radius: 3px;
         background-color: $main-color4;

@@ -1,0 +1,35 @@
+@media screen and (max-width: 680px) {
+    .services__section.mobile {
+        height: auto;
+
+        .services-box {
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+
+        .service {
+            margin-bottom: 20px;
+
+            .icon1, .icon2, .icon3 {
+                height: 220px;
+                background-position: 8px -50px;
+            }
+
+            h4 {
+                font-size: 22px;
+                margin: 0 0 10px 0;
+            }
+
+            p {
+                padding: 0 15px 20px 15px;
+            }
+        }
+
+        .read__more--box {
+            margin-bottom: 20px;
+        }
+
+    }
+}

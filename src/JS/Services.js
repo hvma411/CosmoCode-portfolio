@@ -18,7 +18,7 @@ const Services = () => {
     
 
     return (
-        <section className="services__section" id="services">
+        <section className="services__section mobile" id="services">
             <div className="services__section--position container--section">
                 <div className="title-box">
                     <span></span>
