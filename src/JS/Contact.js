@@ -134,7 +134,7 @@ const Contact = () => {
 
     return (
         <>
-            <section className="contact__section" id="contact">
+            <section className="contact__section mobile" id="contact">
                         <div className="top--box">
                             <div className="left-box" data-aos="fade-right">
                                 <div className="map--box"></div>

@@ -31,7 +31,7 @@ const Main = () => {
             <Services />
             <Projects />
             <About />
-            {/* <Contact /> */}
+            <Contact />
         </>
     )
 }
