@@ -7,7 +7,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-top: 20px;
+            margin-top: 40px;
             
             .left-box {
                 width: 90%;
@@ -22,7 +22,7 @@
 
                 .contact-details {
                     width: 50%;
-                    padding: 10px;
+                    padding: 8px;
 
                     h3 {
                         font-size: 18px;
@@ -39,8 +39,12 @@
                     .social-box {
 
                         a {
-                            width: 25px;
-                            height: 25px;
+                            width: 20px;
+                            height: 20px;
+                        }
+
+                        svg {
+                            font-size: 28px;
                         }
                         
                     }
@@ -51,7 +55,7 @@
                 width: 90%;
                 height: auto;
                 border-radius: 10px;
-                margin-bottom: 20px;
+                margin-bottom: 40px;
 
                 h3 {
                     font-size: 16px;
@@ -82,6 +86,7 @@
 
                     .errors-box {
                         margin: 0 0 8px 0;
+                        min-height: 60px;
                     }
 
                     .wrongName, .wrongEmail, .wrongMessage, .emptyForm, .messageInfo {
@@ -93,6 +98,39 @@
                         margin-top: 8px;
                     }
                 }
+            }
+        }
+
+        .footer {
+            height: auto;
+
+            &__top--box {
+                padding-top: 20px;
+                justify-content: space-evenly;
+
+                h4 {
+                    font-size: 16px;
+                }
+
+                .reducer {
+                    nav, .social, .materials {
+                        text-align: center;
+                        ul {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .materials {
+                        img, svg {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            
+            &__bottom--box {
+                font-size: 12px;
+                padding: 25px 5px 15px 5px;
             }
         }
         .flying-social-box {
