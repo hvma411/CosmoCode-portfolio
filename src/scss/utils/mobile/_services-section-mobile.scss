@@ -71,3 +71,46 @@
 
     }
 }
+
+@media screen and (max-width: 860px) and (orientation: landscape) {
+    .services__section.mobile {
+        height: auto;
+
+        .services-box {
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: nowrap;
+            margin-bottom: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        .service {
+            margin: 10px;
+            height: 305px;
+            padding-right: 5px;
+            padding-left: 5px;
+
+            .icon1, .icon2, .icon3 {
+                height: 160px;
+                background-position: 8px center;
+                margin: 10px 0 10px 0;
+            }
+
+            h4 {
+                font-size: 13px;
+                margin: 0 0 5px 0;
+            }
+
+            p {
+                font-size: 10px;
+                padding: 0 10px 20px 10px;
+            }
+        }
+
+        .read__more--box {
+            margin-bottom: 20px;
+        }
+
+    }
+}

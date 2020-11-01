@@ -192,7 +192,7 @@
 
                 .map--box {
                     width: 50%;
-                    border-radius: 0 10px 10px 0;
+                    border-radius: 0;
                 }
 
                 .contact-details {
@@ -231,7 +231,7 @@
                 height: 400px;
                 border-radius: 10px 0 0 10px;
                 margin: 50px 0 50px 0;
-                
+
 
                 h3 {
                     font-size: 16px;
@@ -272,6 +272,165 @@
 
                     .wrongName, .wrongEmail, .wrongMessage, .emptyForm, .messageInfo {
                         font-size: 8px;
+                    }
+
+                    .messageInfo {
+                        font-size: 14px;
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+
+        .footer {
+            height: auto;
+
+            &__top--box {
+                padding-top: 20px;
+                justify-content: space-evenly;
+
+                h4 {
+                    font-size: 16px;
+                }
+
+                .reducer {
+                    nav, .social, .materials {
+                        text-align: center;
+                        ul {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .materials {
+                        img, svg {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            
+            &__bottom--box {
+                font-size: 12px;
+                padding: 25px 5px 15px 5px;
+            }
+        }
+        .flying-social-box {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 860px) and (orientation: landscape) {
+    .contact__section.mobile {
+        width: 100%;
+        height: auto;
+
+        .top--box {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            
+            
+            .left-box {
+                width: 45%;
+                height: 350px;
+                border-radius: 0 10px 10px 0;
+                margin: 50px 0 50px 0;
+
+                .map--box {
+                    width: 50%;
+                    border-radius: 0;
+                }
+
+                .contact-details {
+                    width: 60%;
+                    padding: 15px;
+
+                    h3 {
+                        font-size: 18px;
+                    }
+
+                    span {
+                        font-size: 18px;
+                    }
+
+                    h4 {
+                        font-size: 16px;
+                    }
+
+                    .social-box {
+
+                        a {
+                            width: 20px;
+                            height: 20px;
+                        }
+
+                        svg {
+                            font-size: 28px;
+                        }
+                        
+                    }
+                }
+            }
+
+            .form-box {
+                width: 45%;
+                height: 350px;
+                border-radius: 10px 0 0 10px;
+                margin: 50px 0 50px 0;
+
+                .headers-box {
+                    margin: 10px 0 10px 0;
+                }
+
+
+                h3 {
+                    font-size: 14px;
+                }
+
+                form {
+                    width: 100%;
+        
+                    .input-box, .button-box {
+                        width: 95%;
+                        height: 33px;
+                    }
+
+                    .button-box {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        
+                    }
+
+                    .errors-box {
+                        width: 95%;
+                        height: 1.5rem;
+                    }
+
+                    .textarea-box {
+                        width: 95%;
+                        height: 5rem;
+                    }
+
+                    input, textarea, button {
+                        width: 95%;
+                        height: 33px;
+                        font-size: 12px;
+                    }
+
+                    textarea {
+                        width: 95%;
+                        height: 5rem;
+                    }
+
+                    .errors-box {
+                        padding: 0 0 8px 0;
+                        min-height: 30px;
+                    }
+
+                    .wrongName, .wrongEmail, .wrongMessage, .emptyForm, .messageInfo {
+                        font-size: 6px;
                     }
 
                     .messageInfo {
