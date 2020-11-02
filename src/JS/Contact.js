@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFontAwesome, faJsSquare, faSass, faHtml5, faCss3Alt, faReact, faNpm, faGithubSquare, faAdobe, faGithub, faLinkedinIn, faLinkedin, faFacebook, faFacebookSquare, faGitSquare, faInstagramSquare, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons'
 import { faChevronLeft, faChevronRight, faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
 import FontAwesome from "react-fontawesome";
-import { Link } from 'react-scroll'
 import Aos from 'aos'
 import Footer from './Footer';
 
@@ -212,5 +211,4 @@ const Contact = () => {
         </>
     );
 };
-
 export default Contact;

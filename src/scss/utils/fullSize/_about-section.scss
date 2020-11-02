@@ -10,7 +10,6 @@
     .top--box {
         width: 100%;
     }
-
     .bottom--box {
         width: 100%;
         display: flex;
@@ -18,7 +17,6 @@
         justify-content: center;
         align-items: center;
     }
-
     .title--box {
         width: 100%;
         display: flex;
@@ -26,7 +24,6 @@
         justify-content: center;
         align-items: center;
         margin: 20px 0 20px 0;
-        
 
         h3 {
             color: $main-color;
@@ -35,7 +32,6 @@
             font-size: 28px;
         }
     }
-
     .subtitle--box {
         width: 100%;
         display: flex;
@@ -52,14 +48,10 @@
             font-size: 28px;
         }
     }
-
-
-
     span {
         width: 50px;
         border-bottom: 3px solid $btn-color;
     }
-
     .stack {
         display: flex;
         justify-content: center;
@@ -81,12 +73,10 @@
                 height: 70px;
                 filter: grayscale(100%);
             }
-
             .ico:hover {
                 width: 75px;
                 height: 75px;
             }
-
             .icon1 {
                 background-image: url(/src/scss/utils/assets/icons8-html-5.svg);
             }
@@ -121,10 +111,7 @@
                 background-image: url(/src/scss/utils/assets/icons8-apple-logo.svg);
             }
         }
-
-
     }
-
     &--position {
         display: flex;
         justify-content: space-between;
@@ -149,7 +136,6 @@
                 -moz-box-shadow: 0px 10px 20px -5px rgba(61,77,112,0.88);
                 box-shadow: 0px 10px 20px -5px rgba(61,77,112,0.88);
             }
-
             .photo--box {
                 margin-top: 20px;
                 width: 100%;
@@ -178,7 +164,6 @@
                 }
             }
         }
-
         .section__sides--right {
             width: 65%;
 
@@ -190,7 +175,6 @@
                     color: $main-color2;
                     margin: 20px 0 20px 0;
                 }
-
                 .about--txt {
                     font-size: 16px;
                     font-weight: 100;

@@ -22,20 +22,15 @@
                 font-weight: 600;
                 padding: 10px;
             }
-    
             .hamburger {
                 display: block;
             }
-    
             &--navigation {
                 display: none;
             }
         }
     }
-
-
 }
-
 @media screen and (max-width: 1195px) and (orientation: landscape) {
     header {
         width: 100%;
@@ -49,7 +44,6 @@
         z-index: 999;
         background-color: rgba(0, 0, 0, 0.9)
     }
-
     .header__nav {
         display: flex;
         justify-content: space-between;
@@ -61,13 +55,11 @@
             font-weight: 600;
             padding: 10px;
         }
-
         &--navigation {
             display: flex;
         }
     }
 }
-
 @media screen and (max-width: 860px) and (orientation: landscape) {
     header {
         width: 100%;
@@ -81,7 +73,6 @@
         z-index: 999;
         background-color: rgba(0, 0, 0, 0.9)
     }
-
     .header__nav {
         display: flex;
         justify-content: space-between;
@@ -93,7 +84,6 @@
             font-weight: 600;
             padding: 10px;
         }
-
         &--navigation {
             display: none;
         }

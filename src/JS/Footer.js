@@ -9,8 +9,6 @@ import {
 import { Link } from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFontAwesome, faJsSquare, faSass, faHtml5, faCss3Alt, faReact, faNpm, faGithubSquare, faAdobe, faGithub, faLinkedinIn, faLinkedin, faFacebook, faFacebookSquare, faGitSquare, faInstagramSquare, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons'
-import { faChevronLeft, faChevronRight, faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
-
 
 const Footer = () => {
 
@@ -22,7 +20,6 @@ const Footer = () => {
                     <div className="title--box">
                         <h4>Menu</h4>
                     </div>
-                    
                     <ul>
                         <li><Link to="header" smooth="true" duration={1000}>Main</Link></li>
                         <li><Link to="services" smooth="true" duration={1000}>Services</Link></li>
@@ -37,7 +34,6 @@ const Footer = () => {
                     <div className="title--box">
                         <h4>Social media</h4>
                     </div>
-
                     <ul>
                         <li>
                             <FontAwesomeIcon icon={faLinkedin} />
@@ -62,7 +58,6 @@ const Footer = () => {
                     <div className="title--box">
                         <h4>Icons</h4>
                     </div>
-                    
                     <ul>
                         <li>
                             <FontAwesomeIcon icon={faFontAwesome} />
@@ -80,5 +75,4 @@ const Footer = () => {
     </div>
     )
 }
-
 export default Footer;

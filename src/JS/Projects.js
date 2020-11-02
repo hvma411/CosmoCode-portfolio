@@ -9,20 +9,12 @@ import {
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 
-
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faJsSquare, faSass, faHtml5, faCss3Alt, faReact, faNpm, faAdobe, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
-import FontAwesome from "react-fontawesome";
-
 const Projects = () => {
 
     useEffect(() => {
         Aos.init({duration: 1500});
     }, [])
 
-    
     return (
         <section className="portfolio__section" id="webdev">
             <div className="portfolio__nav" data-aos="fade-right">
@@ -52,7 +44,7 @@ const Projects = () => {
             </div>
             <div className="portfolio--box" data-aos="fade-up"></div>
         </section>
-    )
-}
+    );
+};
 
 export default Projects

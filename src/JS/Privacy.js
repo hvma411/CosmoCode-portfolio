@@ -1,14 +1,5 @@
 import React, { Component, useState, useEffect } from "react";
 import ReactDOM from "react-dom";
-import {
-  HashRouter,
-  BrowserRouter,
-  Route,
-  Link,
-  Switch,
-  NavLink,
-} from 'react-router-dom';
-
 
 const Privacy = () => {
 
@@ -21,7 +12,7 @@ const Privacy = () => {
 
             </div>
         </section>
-    )
-}
+    );
+};
 
 export default Privacy

@@ -6,7 +6,6 @@ import {
   Switch,
   NavLink,
 } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Aos from 'aos';
 
@@ -16,7 +15,6 @@ const Services = () => {
         Aos.init({duration: 200});
     }, [])
     
-
     return (
         <section className="services__section mobile" id="services">
             <div className="services__section--position container--section">
@@ -46,7 +44,7 @@ const Services = () => {
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
 export default Services

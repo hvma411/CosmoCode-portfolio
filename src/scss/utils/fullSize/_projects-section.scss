@@ -6,13 +6,6 @@
     align-items: center;
     background-color: #f9faff;
 
-    // &--position {
-    //     height: 100%;
-    //     display: flex;
-    //     align-items: center;
-    //     flex-direction: column;
-    // }
-
     .portfolio__nav{
         width: 30%;
         height: 90%;
@@ -36,20 +29,17 @@
         .portfolio {
             width: 50%;
         }
-
         h4 {
             font-size: 28px;
             margin-bottom: 10px;
             cursor: default;
         }
-
         h5 {
             font-size: 16px;
             font-weight: 300;
             margin: 15px 15px 0 0;
             color: $main-color3;
         }
-
         ul {
             list-style: none;
             padding: 10px 0 0 0;
@@ -64,16 +54,12 @@
                 border-top-left-radius: 5px;
                 border-bottom-left-radius: 5px;
             }
-
             li:hover {
                 background: $main-color3;
                 padding-left: 15px;
             }
         }
-
-
     }
-    
     .portfolio--box {
         width: 65%;
         height: 90%;
