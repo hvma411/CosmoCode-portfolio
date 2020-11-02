@@ -160,7 +160,7 @@ const Contact = () => {
                                             <a href="https://www.instagram.com/hvma411/" target="_blank">
                                                 <FontAwesomeIcon icon={faInstagramSquare} />
                                             </a>
-                                            <a href="https://www.facebook.com/hvma411/" target="_blank">
+                                            <a href="https://www.facebook.com/CosmoCodePL" target="_blank">
                                                 <FontAwesomeIcon icon={faFacebookSquare} />
                                             </a>
                                             <a href="https://www.youtube.com/channel/UC4xlC6jh8UCGD3eGtOuhLZg?view_as=subscriber" target="_blank">
@@ -201,7 +201,7 @@ const Contact = () => {
                     <a href="https://www.instagram.com/hvma411/" target="_blank">
                         <FontAwesomeIcon icon={faInstagramSquare} />
                     </a>
-                    <a href="https://www.facebook.com/hvma411/" target="_blank">
+                    <a href="https://www.facebook.com/CosmoCodePL/" target="_blank">
                         <FontAwesomeIcon icon={faFacebookSquare} />
                     </a>
                     <a href="https://www.youtube.com/channel/UC4xlC6jh8UCGD3eGtOuhLZg?view_as=subscriber" target="_blank">
