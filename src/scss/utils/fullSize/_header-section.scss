@@ -1,4 +1,4 @@
-@media (min-width: 1020px) {
+@media (min-width: 1024px) {
     header {
         width: 100%;
         height: auto;
@@ -33,6 +33,7 @@
     
             &--navigation {
                 padding: 10px;
+                display: block;
     
                 ul {
                     display: flex;

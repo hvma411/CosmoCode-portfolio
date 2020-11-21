@@ -1,4 +1,4 @@
-@media screen and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (max-width: 1024px) {
     .hamburger {
         padding: 10px;
         display: inline-block;
@@ -65,7 +65,7 @@
         transform: translateY(-10px) rotate(-45deg);
       }
 }
-@media screen and (max-width: 860px) and (orientation: landscape) {
+@media only screen and (max-width: 860px) and (orientation: landscape) {
   .hamburger {
     padding: 10px;
     display: inline-block;
