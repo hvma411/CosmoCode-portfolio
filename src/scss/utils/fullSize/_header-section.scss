@@ -1,4 +1,4 @@
-@media (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
     header {
         width: 100%;
         height: auto;
@@ -26,7 +26,7 @@
     
             &--logo {
                 color: $txt-color;
-                font-size: 18px;
+                font-size: 1.2rem;
                 font-weight: 600;
                 padding: 10px;
             }
@@ -43,9 +43,49 @@
                 a {
                     color: $txt-color;
                     text-decoration: none;
-                    font-size: 18px;
-                    font-weight: 600;
-                    margin: 10px;
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    margin: 10px 0px 10px 10px;
+                    padding-left: 20px;
+                    cursor: pointer;
+                    user-select: none;
+                    animation-name: navSpacingOut;
+                    animation-duration: 0.5s;
+                    animation-iteration-count: 1;
+                }
+    
+                a:hover {
+                    color: $btn-color;
+                    animation-name: navSpacingIn;
+                    animation-duration: 0.5s;
+                    animation-iteration-count: 1;
+                }
+            }
+        }    
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    header {
+
+        .header__nav {
+    
+            &--logo {
+                color: $txt-color;
+                font-size: 1.5rem;
+                font-weight: 600;
+                padding: 10px;
+            }
+    
+            &--navigation {
+                
+                a {
+                    color: $txt-color;
+                    text-decoration: none;
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    margin: 10px 0px 10px 10px;
+                    padding-left: 20px;
                     cursor: pointer;
                     user-select: none;
                     animation-name: navSpacingOut;
