@@ -180,9 +180,9 @@ const Contact = () => {
                                     <div className="textarea-box"><textarea name='questMessage' value={ contactForm.questMessage } onChange={ handleFormChange } placeholder="Your message..." /></div>
                                     <div className="button-box"><button onClick={ handleButtonClick } ><FontAwesomeIcon icon={faArrowAltCircleRight} /> Send message</button></div>
                                     <div className="errors-box">
-                                        <span className="wrongName">I'd like to know your name, type it please :)</span>
-                                        <span className="wrongEmail">Your email address have to be correct. Otherwise I won't be able to write back to you.</span>
-                                        <span className="wrongMessage">I think your message is too short. Write some more words please. (min. 60 characters)</span>
+                                        <span className="wrongName">I'd like to know your name, type it please.</span>
+                                        <span className="wrongEmail">Your email address must be correct. Otherwise I won't be able to write back to you.</span>
+                                        <span className="wrongMessage">Your message is too short. (min. 60 characters)</span>
                                         <span className="emptyForm">Type your name, email address and message (min. 60 characters), please.</span>
                                         <span className="messageInfo">Your message has been sent.</span>
                                     </div>
