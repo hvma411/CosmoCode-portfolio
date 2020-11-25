@@ -19,7 +19,7 @@
     }
     .footer {
         width: 100%;
-        height: 35vh;
+        height: auto;
         background-color: $main-color;
         display: flex;
         flex-direction: column;
@@ -115,7 +115,7 @@
             height: 100%;
             background-color: $main-color4;
             border-radius: 0 10px 10px 0;
-            padding: 10px;
+            padding: 5px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -140,11 +140,12 @@
             }
             span {
                 color: $main-color3;
-                font-size: 22px;
+                font-size: 1rem;
                 font-weight: 800;
             }
             h4 {
                 text-align: left;
+                font-size: 1rem;
                 color: $main-color2;
             }
             .social-box {
@@ -152,15 +153,15 @@
                 justify-content: space-around;
                 align-items: center;
                 a {
-                    width: 30px;
-                    height: 30px;
+                    width: 28px;
+                    height: 28px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    margin-right: 5px;
+                    margin-right: 2px;
                 }
                 svg {
-                    font-size: 30px;
+                    font-size: 28px;
                     color: $main-color2;
                     
                     cursor: pointer;
@@ -383,4 +384,283 @@
             font-size: 32px;
         }
     }
+}
+
+@media only screen and (min-width: 320px) {
+    .contact__section {
+        width: 100%;
+        height: auto;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        .left-box {
+            width: 90%;
+            height: 350px;
+            display: flex;
+            margin: 30px 0 30px 0;
+            border-radius: 10px;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            -webkit-box-shadow: 0px 10px 20px -5px rgba(61,77,112,0.88);
+            -moz-box-shadow: 0px 10px 20px -5px rgba(61,77,112,0.88);
+            box-shadow: 0px 10px 20px -5px rgba(61,77,112,0.88);
+        }
+        .map--box {
+            content: '';
+            width: 35%;
+            height: 350px;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+            background-image: url(/src/scss/utils/assets/map.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+        .contact-details {
+            width: 65%;
+            height: 100%;
+            background-color: $main-color4;
+            border-radius: 0 10px 10px 0;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+    
+            .wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+            }
+            h3 {
+                font-size: 1.2rem;
+                margin-bottom: 15px;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            h3:nth-of-type(2) {
+                margin-top: 20px;
+            }
+            span {
+                color: $main-color3;
+                font-size: 1rem;
+                font-weight: 800;
+            }
+            h4 {
+                text-align: left;
+                font-size: 1rem;
+                color: $main-color2;
+            }
+            .social-box {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                a {
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 5px;
+                }
+                svg {
+                    font-size: 30px;
+                    color: $main-color2;
+                    
+                    cursor: pointer;
+                }
+            }
+        }
+}
+
+@media only screen and (min-width: 370px) {
+    .contact__section {
+        width: 100%;
+        height: auto;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        .left-box {
+            width: 90%;
+            height: 350px;
+            display: flex;
+            margin: 30px 0 30px 0;
+            border-radius: 10px;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            -webkit-box-shadow: 0px 10px 20px -5px rgba(61,77,112,0.88);
+            -moz-box-shadow: 0px 10px 20px -5px rgba(61,77,112,0.88);
+            box-shadow: 0px 10px 20px -5px rgba(61,77,112,0.88);
+        }
+        .map--box {
+            content: '';
+            width: 35%;
+            height: 350px;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+            background-image: url(/src/scss/utils/assets/map.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+        .contact-details {
+            width: 65%;
+            height: 100%;
+            background-color: $main-color4;
+            border-radius: 0 10px 10px 0;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+    
+            .wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+            }
+            h3 {
+                font-size: 1.2rem;
+                margin-bottom: 15px;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            h3:nth-of-type(2) {
+                margin-top: 20px;
+            }
+            span {
+                color: $main-color3;
+                font-size: 1.1rem;
+                font-weight: 800;
+            }
+            h4 {
+                text-align: left;
+                font-size: 1.2rem;
+                color: $main-color2;
+            }
+            .social-box {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                a {
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 5px;
+                }
+                svg {
+                    font-size: 30px;
+                    color: $main-color2;
+                    
+                    cursor: pointer;
+                }
+            }
+        }
+}
+
+@media only screen and (min-width: 370px) {
+    .contact__section {
+        width: 100%;
+        height: auto;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        .left-box {
+            width: 90%;
+            height: 350px;
+            display: flex;
+            margin: 30px 0 30px 0;
+            border-radius: 10px;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            -webkit-box-shadow: 0px 10px 20px -5px rgba(61,77,112,0.88);
+            -moz-box-shadow: 0px 10px 20px -5px rgba(61,77,112,0.88);
+            box-shadow: 0px 10px 20px -5px rgba(61,77,112,0.88);
+        }
+        .map--box {
+            content: '';
+            width: 40%;
+            height: 350px;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+            background-image: url(/src/scss/utils/assets/map.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+        .contact-details {
+            width: 60%;
+            height: 100%;
+            background-color: $main-color4;
+            border-radius: 0 10px 10px 0;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+    
+            .wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+            }
+            h3 {
+                font-size: 1.2rem;
+                margin-bottom: 15px;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            h3:nth-of-type(2) {
+                margin-top: 20px;
+            }
+            span {
+                color: $main-color3;
+                font-size: 1.1rem;
+                font-weight: 800;
+            }
+            h4 {
+                text-align: left;
+                font-size: 1.2rem;
+                color: $main-color2;
+            }
+            .social-box {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                a {
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 5px;
+                }
+                svg {
+                    font-size: 30px;
+                    color: $main-color2;
+                    
+                    cursor: pointer;
+                }
+            }
+        }
 }

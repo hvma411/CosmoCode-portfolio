@@ -101,18 +101,18 @@
         }
         .map--box {
             content: '';
-            width: 60%;
+            width: 50%;
             height: 100%;
             background-image: url(/src/scss/utils/assets/map.jpeg);
             background-size: cover;
             background-position: center;
         }
         .contact-details {
-            width: 40%;
+            width: 50%;
             height: 100%;
             background-color: $main-color4;
             border-radius: 0 10px 10px 0;
-            padding: 30px;
+            padding: 15px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -136,12 +136,13 @@
             }
             span {
                 color: $main-color3;
-                font-size: 22px;
+                font-size: 1.1rem;
                 font-weight: 800;
             }
             h4 {
                 text-align: left;
                 color: $main-color2;
+                font-size: 1.2rem;
             }
             .social-box {
                 display: flex;
@@ -200,6 +201,7 @@
             width: 45%;
             height: 80%;
             display: flex;
+            margin-bottom: 0;
             background-color: $main-color2;
             border-radius: 10px 0 0 10px;
             flex-direction: column;
@@ -215,11 +217,11 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                margin: 20px 0 10px 0;
                 color: $main-color3;
-    
+                    
                 h3 {
                     margin: 0;
+                    max-width: 100%;
                 }
             }
         } 
@@ -231,8 +233,8 @@
             color: $btn-color;
     
             .input-box, .button-box, .errors-box {
-                width: 30.3rem;
-                height: 2.7rem;
+                width: 90%;
+                height: 2.3rem;
                 margin: 8px;
                 display: flex;
                 justify-content: center;
@@ -242,19 +244,19 @@
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: flex-start;
-                height: 60px;
+                height: 45px;
             }
             .textarea-box {
-                width: 30.3rem;
-                height: 10rem;
-                margin: 10px;
+                width: 90%;
+                height: 8rem;
+                margin: 8px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
             input, textarea, button {
-                width: 30rem;
-                height: 2.5rem;
+                width: 100%;
+                height: 100%;
                 border-radius: 3px;
                 border: none;
                 background: $txt-color;
@@ -268,18 +270,14 @@
                 color: $btn-color;
             }
             input:focus, input:hover  {
-                width: 30.1rem;
-                height: 2.6rem;
                 font-size: 1.25rem;
             }
             textarea:focus, textarea:hover {
-                width: 30.1rem;
-                height: 9.6rem;
                 font-size: 1.25rem;
             }
             textarea {
                 resize: none;
-                height: 9.5rem;
+                height: 100%
                 
             }
             button {
@@ -301,14 +299,14 @@
             }
             .wrongName, .wrongEmail, .wrongMessage, .emptyForm, .messageInfo {
                 color: $btn-color;
-                font-size: 12px;
+                font-size: 0.6rem;
                 font-weight: 600;
                 margin-top: 2px;
                 padding-left: 10px;
                 display: none;
             }
             .messageInfo {
-                font-size: 16px;
+                font-size: 0.8rem;
                 width: 100%;
                 text-align: center;
                 animation-name: messageSentIn;
